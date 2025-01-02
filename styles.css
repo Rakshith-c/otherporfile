@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    place-content: center;
+}
+
+header {
+    background-color: hsl(241, 88%, 48%);
+    color: #acbd15c7;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 50px;
+}
+
+.btn {
+    background: #cbddff;
+    color: #f6f6f6;
+    text-decoration: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    /*display: inline-block;
+    margin: 10px ;*/
+}
+
+/* CONTENT WRAPPER */
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 90%;
+    width: 800px;
+}
+
+/* HOME PAGE */
+.home {
+    background-image: url(./placeholder-images/bg-coffee-shop.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home .content-wrapper {
+    font-family: 'Lato', sans-serif;
+    flex: 1 0 auto;
+}
+
+.wall h1 {
+    font-family: Segoe Script;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+}
+
+.wall h2 {
+    font-family: Segoe Script;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* RESUME PAGE */
+.resume {
+    background-color: #d4ecfb;
+}
+
+.resume-section {
+    margin-bottom: 70px;
+}
+
+.resume-section h2 {
+    border-bottom: 1px dashed #181b23;
+    /background-color: #e0f7fa;/
+    padding: 5px;
+}
+
+.downloadlink {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
+
+.home1 {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+/* PROJECTS */
+.project {
+    display: flow-root;
+    margin: 15px 0;
+}
+
+.project img {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(14, 13, 12);
+    color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+
+footer a {
+    color: #ffb74d;
+}
+
+footer a:hover {
+    color: #00796b;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    padding: 3px;
+}
+
+.socials img {
+    width: 30px;
+}
+
+.socials img:hover {
+    opacity: 0.4;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .wall h1, .wall h2 {
+        font-size: 20px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .resume header::before {
+        height: 250px;
+    }
+
+    .project img {
+        float: none;
+        margin: 10px auto;
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .socials img {
+        width: 20px;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+        width: 100%;
+    }
+}
+styles.css
